@@ -1,0 +1,17 @@
+@import "../defaults.scss";
+
+.nav-bar {
+    padding: steps(2);
+    ul {
+        display: flex;
+        column-gap: steps(4);
+    }
+
+    a {
+        color: black;
+    }
+
+    .active {
+        color: $color-primary;
+    }
+}

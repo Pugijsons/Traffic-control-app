@@ -1,0 +1,15 @@
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\bin\Debug\net5.0\TrafficControl.Core.deps.json
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\bin\Debug\net5.0\TrafficControl.Core.runtimeconfig.json
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\bin\Debug\net5.0\TrafficControl.Core.runtimeconfig.dev.json
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\bin\Debug\net5.0\TrafficControl.Core.dll
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\bin\Debug\net5.0\TrafficControl.Core.pdb
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\obj\Debug\net5.0\TrafficControl.Core.csproj.AssemblyReference.cache
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\obj\Debug\net5.0\TrafficControl.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\obj\Debug\net5.0\TrafficControl.Core.AssemblyInfoInputs.cache
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\obj\Debug\net5.0\TrafficControl.Core.AssemblyInfo.cs
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\obj\Debug\net5.0\TrafficControl.Core.csproj.CoreCompileInputs.cache
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\obj\Debug\net5.0\TrafficControl.Core.dll
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\obj\Debug\net5.0\refint\TrafficControl.Core.dll
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\obj\Debug\net5.0\TrafficControl.Core.pdb
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\obj\Debug\net5.0\TrafficControl.Core.genruntimeconfig.cache
+C:\Users\jpuga\source\repos\Traffic control app\TrafficControl.Core\obj\Debug\net5.0\ref\TrafficControl.Core.dll

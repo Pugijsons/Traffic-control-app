@@ -1,0 +1,23 @@
+$color-primary : rgb(255, 0, 0);
+$color-secondary : rgb(0, 0, 0);
+
+
+@function steps($number){
+    @return $number * 4px;
+}
+
+@mixin for-at-least($min-width: 400px, $max-width: 9999px){
+    @media only screen and (min-width: $min-width) and (max-width: $max-width)  {
+        @content;
+    }
+}
+
+$phone: 500px;
+$tablet: 900px;
+$desktop: 1200px;
+
+@mixin at-least ($min-width:$phone) {
+    @media only screen and (min-width: $min-width){
+        @content;
+    }
+}
