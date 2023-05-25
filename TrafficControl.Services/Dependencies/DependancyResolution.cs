@@ -11,6 +11,9 @@ namespace TrafficControl.Services.Dependencies
             services.AddScoped<IEntityService<Car>, EntityService<Car>>();
             services.AddScoped<IDbService, DbService>();
             services.AddScoped<ICarService, CarService>();
+            services.AddScoped<IFilteringService, FilteringService>();
+            services.AddScoped<IDayOverview, DayOverview>();
+            services.AddScoped<IFileParse, FileParse>();
         }
     }
 }

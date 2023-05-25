@@ -21,15 +21,14 @@ namespace TrafficControl.Services
             string[] carData = carInfo.Split('\t');
             return new Car
             {
-                Date = carData[0],
+                Date = DateTime.Parse(carData[0]),
                 Speed = Int32.Parse(carData[1]),
                 LicensePlate = carData[2]
             };
         }
 
-        public void AddCars(string path)
-        {
-            List<string> carList = File.ReadAllLines(path).ToList();
+        public void AddCars(List<string> carList)
+        { 
             Car[] carData = carList.Select(carData => StringToCar(carData)).ToArray();
             _context.Cars.AddRange(carData);
             _context.SaveChanges();

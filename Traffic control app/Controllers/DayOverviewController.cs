@@ -4,6 +4,7 @@ using TrafficControl.Core.Services;
 
 namespace Traffic_control_app.Controllers
 {
+    [Route("dayoverview")]
     [ApiController]
     public class DayOverviewController : BaseApiController
     {
@@ -15,10 +16,10 @@ namespace Traffic_control_app.Controllers
         }
 
         [HttpGet]
-        [Route("dayoverview")]
-        public IActionResult GetDayOverview(DateTime date)
+        [Route("retrievedata")]
+        public IActionResult GetDayOverview(string date)
         {
-            return Ok(_overview.ShowDayOverview(date));
+            return Ok(_overview.ShowDayOverview(DateTime.Parse(date)));
         }
-    }
+    } 
 }

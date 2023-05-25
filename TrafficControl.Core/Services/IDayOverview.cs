@@ -5,6 +5,6 @@ namespace TrafficControl.Core.Services
 {
     public interface IDayOverview
     {
-        public Car[] ShowDayOverview(DateTime date);
+        public GraphData[] ShowDayOverview(DateTime date);
     }
 }

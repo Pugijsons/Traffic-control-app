@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using TrafficControl.Core.Services;
 using TrafficControl.Data;
 
@@ -10,19 +11,27 @@ namespace Traffic_control_app.Controllers
     {
         private readonly ICarService _carService;
         private readonly ITrafficControlDbContext _context;
+        private readonly IFileParse _parser;
 
-        public DbOptionsController(ICarService carService, ITrafficControlDbContext context)
+        public DbOptionsController(ICarService carService, ITrafficControlDbContext context, IFileParse parser)
         {
             _carService = carService;
             _context = context;
+            _parser = parser;
         }
 
         [HttpPut]
         [Route("upload")]
-        public IActionResult AddCars(string path)
+        public IActionResult AddCars(IFormFile file)
         {
-            _carService.AddCars(path);
-            return Ok();
+            var parseResult = _parser.ConvertFileToList(file);
+            if (parseResult == null)
+            {
+                return BadRequest();
+            }
+
+            _carService.AddCars(parseResult);
+            return Ok("File uploaded.");
         }
 
         [HttpPost]

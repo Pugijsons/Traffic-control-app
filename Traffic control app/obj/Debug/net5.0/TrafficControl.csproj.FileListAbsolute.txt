@@ -70,3 +70,12 @@ C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\ne
 C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\TrafficControl.Services.dll
 C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\TrafficControl.Services.pdb
+C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\System.Web.Cors.dll
+C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\System.Net.Http.Formatting.dll
+C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\System.Web.Http.dll
+C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\System.Web.Http.Cors.dll
+C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\jpuga\source\repos\Traffic control app\Traffic control app\bin\Debug\net5.0\AutoMapper.dll

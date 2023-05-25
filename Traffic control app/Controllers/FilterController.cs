@@ -4,6 +4,7 @@ using TrafficControl.Core.Services;
 
 namespace Traffic_control_app.Controllers
 {
+    [Route("filter")]
     [ApiController]
     public class FilterController : BaseApiController
     {

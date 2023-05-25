@@ -8,7 +8,7 @@ namespace TrafficControl.Core.Services
     {
         public Car[] Filter(FilterRequest filter);
         public Car[] FilterBySpeed(int? speed, Car[] filteredCars);
-        public Car[] FilterByToSpecificDate(DateTime? date, Car[] filteredCars);
-        public Car[] FilterByFromSpecificDate(DateTime? date, Car[] filteredCars);
+        public Car[] FilterByToSpecificDate(string? date, Car[] filteredCars);
+        public Car[] FilterByFromSpecificDate(string? date, Car[] filteredCars);
     }
 }

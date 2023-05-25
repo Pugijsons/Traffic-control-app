@@ -8,7 +8,7 @@ namespace Traffic_control_app.Models
         public bool ByToDate { get; set; }
         public bool ByFromDate { get; set; }
         public int? Speed { get; set; }
-        public DateTime? ToDate { get; set; }
-        public DateTime? FromDate { get; set; }
+        public string? ToDate { get; set; }
+        public string? FromDate { get; set; }
     }
 }

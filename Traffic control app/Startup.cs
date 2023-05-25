@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -26,7 +27,10 @@ namespace Traffic_control_app
             services.AddControllers();
             services.AddDbContext<TrafficControlDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<ITrafficControlDbContext, TrafficControlDbContext>();
+            services.AddSingleton<IMapper>(AutoMapperConfig.CreateMapper());
             services.RegisterServices();
+            services.AddCors(options => options.AddPolicy(name: "trafficControl",
+                policy => { policy.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader(); }));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Traffic_control_app", Version = "v1" });
@@ -44,6 +48,8 @@ namespace Traffic_control_app
             }
 
             app.UseRouting();
+
+            app.UseCors("trafficControl");
 
             app.UseAuthorization();
 
