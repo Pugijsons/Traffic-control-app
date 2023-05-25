@@ -3,8 +3,9 @@
 .nav-bar {
     padding: steps(2);
     ul {
-        display: flex;
+        display:inline-flex;
         column-gap: steps(4);
+        list-style-type: none;
     }
 
     a {

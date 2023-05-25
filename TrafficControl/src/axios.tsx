@@ -9,5 +9,5 @@ export const dayOverviewClient = axios.create({
 });
 
 export const filterByClient = axios.create({
-    baseURL: "http://localhost:5000/filterby/"
+    baseURL: "http://localhost:5000/filter/"
 });

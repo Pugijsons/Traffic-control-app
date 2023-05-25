@@ -1,4 +1,4 @@
-import Reach from 'react';
+import React from 'react';
 import { Link, NavLink }  from "react-router-dom"
 import "../styles/components/nav-bar.scss"
 import { NAV_LINKS } from '../constants/nav-links';
