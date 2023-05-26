@@ -3,8 +3,8 @@ export class FilterRequest{
     ByToDate: boolean;
     ByFromDate: boolean;
     Speed?: number;
-    ToDate?: string;
-    FromDate?: string;
+    ToDate?: Date;
+    FromDate?: Date;
 
     constructor(byspeed: boolean, bytodate: boolean, byfromdate: boolean,
         speed?: number, todate?: string, fromdate?: string) {
@@ -12,7 +12,10 @@ export class FilterRequest{
             this.ByToDate = bytodate;
             this.ByFromDate = byfromdate;
             this.Speed = speed;
-            this.ToDate = todate;
-            this.FromDate = fromdate;
-        }
-}
+            if (todate) {
+                this.ToDate = new Date(todate);
+            }
+            if (fromdate) {
+                this.FromDate = new Date(fromdate);
+            } 
+}}

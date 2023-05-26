@@ -4,37 +4,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-table {
+  }
+  
+  table {
     padding: 20px;
     border: 3px solid gray;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     height: auto;
-}
- 
-th {
+    margin-top: 20px;
+  }
+  
+  th {
     border-bottom: 1px solid gray;
-}
- 
-td {
+  }
+  
+  td {
     text-align: center;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
     border-left: 1px solid gray;
     height: 50px;
-}
-
-.FilteredTable{
-    display: inline-flex;
-    justify-content: center;
+  }
+  
+  .FilteredTable {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.dateentries{
+  }
+  
+  .Pagination {
+    margin-top: 20px;
+  }
+  
+  .dateentries {
     display: block;
     padding-bottom: 75px;
-}
-
-.filterbutton{
+  }
+  
+  .filterbutton {
     margin-left: 15px;
-}
+  }

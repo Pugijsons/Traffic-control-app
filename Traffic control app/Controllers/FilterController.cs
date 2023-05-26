@@ -17,7 +17,7 @@ namespace Traffic_control_app.Controllers
 
         [HttpGet]
         [Route("filterby")]
-        public IActionResult GetFilteredResults(FilterRequest filterRequest)
+        public IActionResult GetFilteredResults([FromQuery] FilterRequest filterRequest)
         {
             return Ok(_filteringService.Filter(filterRequest));
         }

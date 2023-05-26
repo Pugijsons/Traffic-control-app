@@ -3,6 +3,7 @@ import '../styles/filteredbyparameters.scss'
 import { FilterRequest } from '../api/models/FilterRequest';
 import { FilteredData } from '../api/FilterByParametersApi';
 import { FilterBy } from '../api/FilterByParametersApi';
+import { FilteredTable } from '../components/FilteredTable';
 
 export const FilteredByParameters = () => {
     
@@ -39,7 +40,13 @@ export const FilteredByParameters = () => {
       };
 
       const handleFiltrationInitiation = async () => {
-        var request = new FilterRequest(ifFilterBySpeed, ifFilterByToDate, ifFilterByFromDate, filterSpeed, filterToDate, filterFromDate);
+        var request = new FilterRequest(ifFilterBySpeed, 
+          ifFilterByToDate, 
+          ifFilterByFromDate, 
+          filterSpeed, 
+          filterToDate, 
+          filterFromDate);
+
         var returnedData = await FilterBy.fetchFilteredData(request);
         setFilteredData(returnedData);
       }
@@ -55,30 +62,8 @@ export const FilteredByParameters = () => {
             {ifFilterByFromDate ? (<input type="date" onChange={handleFromDateChange}/>) : (<div></div>)}
             {ifFilterByToDate ? (<input type="date" onChange={handleToDateChange}/>) : (<div></div>)}
             {ifFilterBySpeed ? (<input type="number" min={0} onChange={handleSpeedChange}/>) : (<div></div>)}
-
-            </div>
-              <div className="FilteredTable">
-                  <table>
-                      <thead>
-                          <tr>
-                              <th>License Plate</th>
-                              <th>Speed</th>
-                              <th>Date and Time</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          {filteredData.map((val, key) => {
-                              return (
-                                  <tr key={key}>
-                                      <td>{val.licensePlate}</td>
-                                      <td>{val.speed}</td>
-                                      <td>{val.date}</td>
-                                  </tr>
-                              );
-                          })}
-                      </tbody>
-                  </table>
-              </div>
-    </div>
+        </div>
+        <div><FilteredTable data = {filteredData}></FilteredTable></div>
+        </div>
     )
 }

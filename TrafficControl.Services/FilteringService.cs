@@ -41,14 +41,14 @@ namespace TrafficControl.Services
             return filteredCars.Where(car => car.Speed >= speed).ToArray();
         }
 
-        public Car[] FilterByToSpecificDate(string? date, Car[] filteredCars)
+        public Car[] FilterByToSpecificDate(DateTime? date, Car[] filteredCars)
         {
-            return filteredCars.Where(car => car.Date.CompareTo(DateTime.Parse(date)) < 0).ToArray();
+            return filteredCars.Where(car => car.Date.CompareTo(date) < 0).ToArray();
         }
 
-        public Car[] FilterByFromSpecificDate(string? date, Car[] filteredCars)
+        public Car[] FilterByFromSpecificDate(DateTime? date, Car[] filteredCars)
         {
-            return filteredCars.Where(car => car.Date.CompareTo(DateTime.Parse(date)) > 0).ToArray();
+            return filteredCars.Where(car => car.Date.CompareTo(date) > 0).ToArray();
         }
     }
 }
