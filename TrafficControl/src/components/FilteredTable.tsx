@@ -45,7 +45,7 @@ export const FilteredTable: React.FC<FilteredTableProps> = ({ data }) => {
                 <tr key={key}>
                   <td>{val.licensePlate}</td>
                   <td>{val.speed}</td>
-                  <td>{val.date}</td>
+                  <td>{val.date.replace('T', ' ')}</td>
                 </tr>
               );
             })}
