@@ -1,0 +1,18 @@
+@import "../defaults.scss";
+
+.nav-bar {
+    padding: steps(2);
+    ul {
+        display:inline-flex;
+        column-gap: steps(4);
+        list-style-type: none;
+    }
+
+    a {
+        color: black;
+    }
+
+    .active {
+        color: $color-primary;
+    }
+}
