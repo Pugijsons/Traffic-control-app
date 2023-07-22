@@ -14,8 +14,10 @@ A traffic speed overview application that allows you to upload statistics about 
 * .NET Core SDK
 
 # Instructions
-
-
+1. Download solution.
+2. Build .NET project and React project.
+3. Enjoy!
+A better way is coming soon!
 
 # Screenshots
 ![image](https://github.com/Pugijsons/Traffic-control-app/assets/98178230/58d7e068-f24c-423c-83ae-84241a1c729b)
